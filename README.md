@@ -4,13 +4,13 @@ Convert Format Uang Rupiah Menjadi Text/String ( Terbilang )
 ---
 
 # Navigation
-[-] [PHP Function](../blob/master/LICENSE)
+[-] [PHP Function](#php)
 
-[-] [Javascript Function](../blob/master/LICENSE)
+[-] [Javascript Function](#javascript)
 
-[-] [PHP Result](../blob/master/LICENSE)
+[-] [PHP Result](#output-php)
 
-[-] [Javascript Result Function](../blob/master/LICENSE)
+[-] [Javascript Result Function](#output-javascript)
 
 ***
 
