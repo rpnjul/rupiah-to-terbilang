@@ -1,5 +1,5 @@
-# rupiah-to-terbilang
-Convert Rupiah Menjadi Text ( Terbilang )
+# rupiah to terbilang
+Convert Format Uang Rupiah Menjadi Text/String ( Terbilang )
 
 
 ## PHP
