@@ -1,6 +1,18 @@
 # rupiah to terbilang
 Convert Format Uang Rupiah Menjadi Text/String ( Terbilang )
 
+---
+
+# Navigation
+[-] [PHP Function](../blob/master/LICENSE)
+
+[-] [Javascript Function](../blob/master/LICENSE)
+
+[-] [PHP Result](../blob/master/LICENSE)
+
+[-] [Javascript Result Function](../blob/master/LICENSE)
+
+***
 
 ## PHP
 ```php
@@ -48,10 +60,10 @@ echo terbilang($angka);
 Result = "satu juta lima ratus dua puluh ribu"
 ```
 
-  ## Javascript
-  
-  ```javascript
-  function terbilang(bilangan) {
+## Javascript
+
+```javascript
+function terbilang(bilangan) {
 
  bilangan    = String(bilangan);
  var angka   = new Array('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0');
@@ -136,3 +148,32 @@ Result = "satu juta lima ratus dua puluh ribu"
 }
   ```
   
+## Output Javascript
+
+```html
+<html>
+	<head>
+		<body>
+		<form>
+			   <label>Masukkan Nilai</label> <input type="text" id="duit-terbilang" class="duit" onkeyup="inputTerbilang();">
+			   <br/>
+			   <br/>
+			   <label>Hasil</label> <input type="text" id="duit-terbilang-output">
+		</form>
+		</body
+	</head>
+	<script src="jquery-1.11.2.min.js"></script>
+<script>
+function inputTerbilang() {
+	//membuat inputan otomatis jadi mata uang
+	$('.duit').mask('0.000.000.000', {reverse: true});
+
+	//mengambil data uang yang akan dirubah jadi terbilang
+	var input = document.getElementById("duit-terbilang").value.replace(/\./g, "");
+
+	//menampilkan hasil dari terbilang
+	document.getElementById("duit-terbilang-output").value = terbilang(input).replace(/  +/g, ' ');
+} 
+</script
+</html>
+```
